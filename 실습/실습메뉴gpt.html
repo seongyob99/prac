@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심 메뉴 입력</title>
+    <script>
+        function displayMenu() {
+            const menu = document.getElementById("menuInput").value;
+            document.getElementById("output").innerHTML = "내가 먹고 싶은 점심 메뉴: " + menu;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>오늘 먹고 싶은 점심 메뉴를 입력하세요</h2>
+
+    <input type="text" id="menuInput" name="menuInput" placeholder="점심 메뉴 입력"><br><br>
+
+    <button onclick="displayMenu()">메뉴 확인</button>
+
+    <!-- 점심 메뉴가 출력될 h1 태그 -->
+    <h1 id="output"></h1>
+
+</body>
+</html>
